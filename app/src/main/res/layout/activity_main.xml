@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:scaleType = "centerCrop"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="34dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:textStyle="bold"
+        android:text="Welcome to Andy's Cafe" />
+
+    <TextView
+        android:id="@+id/textOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:text="What would you like to have?" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="50dp">
+
+        <EditText
+            android:id="@+id/eT1"
+            android:layout_width = "match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            android:text="Item1" />
+
+        <EditText
+            android:id="@+id/eT2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+
+            android:inputType="textPersonName"
+            android:text="Item2" />
+
+        <EditText
+            android:id="@+id/eT3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Item3" />
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content"
+            android:text="ORDER NOW" />
+    </LinearLayout>
+
+</LinearLayout>
